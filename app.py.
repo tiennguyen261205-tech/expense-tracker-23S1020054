@@ -1,0 +1,40 @@
+# Biến toàn cục lưu trữ dữ liệu
+expenses = []
+def add_expense():
+# Code xử lý nhập liệu cho Bước 3
+# item = {'description': ..., 'amount': ...}
+# expenses.append(item)
+print("Đã thêm khoản chi thành công!")
+def show_expenses():
+# Code xử lý in danh sách cho Bước 4
+if not expenses:
+print("Chưa có khoản chi nào.")
+else:
+# For loop in ra
+pass
+def total_expenses():
+# Code tính tổng cho Bước 5
+# Duyệt list cộng dồn amount
+pass
+2/3
+def main():
+while True:
+print("\n--- QUẢN LÝ CHI TIÊU ---")
+print("1. Thêm khoản chi")
+print("2. Xem danh sách")
+print("3. Tính tổng tiền")
+print("4. Thoát")
+choice = input("Chọn chức năng (1-4): ")
+if choice == '1':
+add_expense()
+elif choice == '2':
+show_expenses()
+elif choice == '3':
+total_expenses()
+elif choice == '4':
+print("Tạm biệt!")
+break
+else:
+print("Lựa chọn không hợp lệ.")
+if __name__ == "__main__":
+main()
