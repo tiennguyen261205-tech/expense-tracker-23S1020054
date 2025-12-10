@@ -10,8 +10,15 @@ def add_expense():
 
     print("Đã thêm khoản chi thành công!")
 
-def show_expenses():
-    print("Chức năng đang được phát triển!")
+def total_expenses():
+    total = sum(item["amount"] for item in expenses)
+    print(f"Tổng tiền đã chi: {total} VND")
+
+
+
+    print("\n--- DANH SÁCH CHI TIÊU ---")
+    for i, item in enumerate(expenses, start=1):
+        print(f"{i}. {item['description']} - {item['amount']} VND")
 
 def total_expenses():
     print("Chức năng đang được phát triển!")
